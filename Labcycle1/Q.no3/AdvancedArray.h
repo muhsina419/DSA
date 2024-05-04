@@ -35,7 +35,4 @@ class Array{
 		void merge(int,int,int);
 		void merge_sort(int,int);
 
-		template <class U>
-		friend	ostream& operator << (ostream& ,Array<U>);
-	
 };

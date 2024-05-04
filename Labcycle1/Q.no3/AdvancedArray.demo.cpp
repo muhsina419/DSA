@@ -24,9 +24,9 @@ int main(){
         cout << "m. Sort using Quick Sort\n";
         cout << "n. Linear Search\n";
         cout << "o. Binary Search\n";
-        cout << "p. Frequency\n";
-        cout << "q. Rotate Right \n";
-        cout << "r. Rotate Left \n";
+        cout << "p. Rotate Right \n";
+        cout << "r. Frequency \n";
+        cout << "q. Rotate Left \n";
         cout << "s. Frequency list\n";
         cout << "t. List Distinct Elements \n";
         cout << "u. Exit\n ";
@@ -153,6 +153,9 @@ int main(){
 		case't':
 			cout<<"Frequency List \n";
 			linearArray.frequency_list();
+			break;
+		case'u':
+			cout<<"Existing Program \n";
 			break;
         default:
         	cout<<"Invalid choice ! Please enter a valid option. "<<endl;
