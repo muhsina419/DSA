@@ -14,7 +14,7 @@ struct Song {
         artist = a;
         duration = d;
         genre = g;
-        next = nullptr;
+        next = NULL;
     }
 };
 
@@ -22,7 +22,7 @@ Song* merge(Song* left, Song* right, const string& sortBy) {
     if (!left) return right;
     if (!right) return left;
 
-    Song* result = nullptr;
+    Song* result = NULL;
 
     if (sortBy == "title" || sortBy == "artist" || sortBy == "genre") {
         if (sortBy == "title" ? left->title <= right->title : sortBy == "artist" ? left->artist <= right->artist : left->genre <= right->genre) {
@@ -60,7 +60,7 @@ void splitList(Song* head, Song** left, Song** right) {
 
     *left = head;
     *right = slow->next;
-    slow->next = nullptr;
+    slow->next = NULL;
 }
 
 void mergeSort(Song** headRef, const string& sortBy) {
@@ -95,8 +95,8 @@ int main() {
 
     cin.ignore(); 
 
-    Song* head = nullptr;
-    Song* tail = nullptr; 
+    Song* head = NULL;
+    Song* tail = NULL; 
 
     for (int i = 0; i < length; i++) {
         string songname, artist, genre;
